@@ -6,6 +6,7 @@ table(bonds$Result)
 bonds$Result <- factor(bonds$Result, labels=c('Cancelled', 'Carried','Defeated','NR'))
 table(bonds$Gov_Type,bonds$Gov_Type[Gov_Type=='Cancelled'])
 prop.table(table(bonds$Gov_Type,bonds$Result),2)
+#statistics
 
 #2
 Votes_Total <- (bonds$Votes_For + bonds$Votes_Against)
